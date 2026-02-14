@@ -38,7 +38,7 @@ Send an email.
 curl -s -X POST -H "Authorization: Bearer $AGENTMAIL_API_KEY" \
   -H "Content-Type: application/json" \
   -d "{\"to\": [\"$2\"], \"subject\": \"$3\", \"text\": \"$4\"}" \
-  https://api.agentmail.to/v0/inboxes/$1/messages
+  https://api.agentmail.to/v0/inboxes/$1/messages/send
 ```
 
 ### `email_list_messages`
